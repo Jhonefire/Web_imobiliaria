@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Nov-2023 às 00:19
+-- Tempo de geração: 26-Nov-2023 às 01:47
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -36,7 +36,7 @@ CREATE TABLE `imoveis` (
   `Estado_imovel` varchar(150) NOT NULL,
   `Bairro_imovel` varchar(150) NOT NULL,
   `Cep_imovel` int(11) NOT NULL,
-  `Imagem` varchar(100) NOT NULL
+  `Imagem` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -44,9 +44,9 @@ CREATE TABLE `imoveis` (
 --
 
 INSERT INTO `imoveis` (`Id_imovel`, `Desc_imovel`, `preco_imovel`, `Logradouro_imovel`, `Cidade_imovel`, `Estado_imovel`, `Bairro_imovel`, `Cep_imovel`, `Imagem`) VALUES
-(7, 'Residencial Vila Ema', 250000, 'R. Uhland, 69', 'São Paulo', 'SP', 'Vila Ema', 3283000, ''),
-(8, 'Residencial Vila das Belezas', 150000, 'Rua Tenente Isaías Branco de Araújo, 325', 'São Paulo', 'SP', 'Vila das Belezas', 5841150, ''),
-(9, 'Residencial Urupema', 200000, 'Rua Eulina Rosa dos Santos', 'Mogi das Cruzes', 'SP', 'Vila Municipal', 8747010, '');
+(7, 'Residencial Vila Ema', 250000, 'R. Uhland, 69', 'São Paulo', 'SP', 'Vila Ema', 3283000, '7_Vila Ema.jpeg'),
+(8, 'Residencial Vila das Belezas', 150000, 'Rua Tenente Isaías Branco de Araújo, 325', 'São Paulo', 'SP', 'Vila das Belezas', 5841150, '8_Vila das Belezas.jpeg'),
+(9, 'Residencial Urupema', 200000, 'Rua Eulina Rosa dos Santos', 'Mogi das Cruzes', 'SP', 'Vila Municipal', 8747010, '9_Urupema.jpeg');
 
 -- --------------------------------------------------------
 
